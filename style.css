@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* ---- utility classes -- */
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.center{
+    justify-content: center;
+}
+
+.gap{
+    gap: 10px;
+}
+
+.btn{
+    border: none;
+    padding: 0.6rem 2rem;
+    background: #7b25ec;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn:active{
+    transform: scale(0.9);
+}
+
+/* --- conatiner ---- */
+.container{
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+}
+
+.colorContain{
+    text-align: center;
+    padding: 1rem;
+    background-color: rebeccapurple;
+}
+
+h1{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.colorContain p{
+    font-size: 2rem;
+    margin-top: 8px;
+    color: #fff;
+}
+
+.boxes{
+    width: 100%;
+    height: 100%;
+    padding:  0px 1rem 1rem;
+}
+
+.box{
+    background-color: black;
+    width: 115px;
+    height: 115px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.box:active{
+    transform: scale(0.9);
+}
+.boxcontain{
+    margin-top: 10px;
+}
+.guessMsg{
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.msgContain{
+    max-width: 360px;
+    width: 100%;
+    justify-content: space-between;
+}
+.msgContain{
+    color: #000;
+    font-size: 19px;
+}
+
+/* ---- win  or loss ---- */
+.win-loss{
+    display: none;
+    flex-flow: column-reverse;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(11,0,0,0.9);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    font-size: 25px;
+}
+.win-loss.active{
+    display: flex;
+}
+ 

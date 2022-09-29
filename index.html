@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ------- custom css link here -------->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Color Predicting Game</title>
+</head>
+
+<body>
+    <div class="win-loss flex center gap">
+         <div class="countdown">4</div>
+         <div class="win-loss-text">Correct Guess</div>
+    </div>
+    <div class="container">
+       <div class="colorContain">
+          <h1>Guess the color</h1>
+          <p class="colorText">Rcb(123,45,67)</p>
+       </div>
+        <div class="guessMsg flex center">
+           <div class="msgContain flex flex-wrap gap">
+             <div class="msg"></div>
+             <div class="Move">
+                <span>Move : <span class="moveNum">4</span></span>
+             </div>
+           </div>
+        </div>
+       <div class="boxes">
+             <div class="boxcontain flex center flex-wrap gap">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+             </div>
+
+              <div class="boxcontain flex center flex-wrap gap">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+              </div>
+        </div>
+        <button class="btn">New colors</button>
+    </div>
+
+    <!-- ----- js here ----- -->
+    <script src="script.js"></script>
+</body>
+
+</html>
